@@ -10,7 +10,7 @@
   groupNumber: 10,
   bilag: 0,
   teacher: " ",
-  semester: "vår 2023"
+  semester: "vår 2024"
 )
 
 // Include and display all the subpages
