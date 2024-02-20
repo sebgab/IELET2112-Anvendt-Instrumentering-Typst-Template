@@ -87,6 +87,7 @@
   biblNr: "",
   teacher: "",
   semester: "vår 2020",
+  pageBreakBetweenHeadings: false,
   body
 ) = {
   let bar
@@ -263,6 +264,7 @@
   set page(header: getHeader())
   
   show heading.where(level: 1): it => [
+    #if (pageBreakBetweenHeadings) { pagebreak(weak: true) }
     #set text(20pt)
     #block(counter(heading).display() + " " + smallcaps(it.body)) 
   ]
