@@ -263,7 +263,6 @@
   set page(header: getHeader())
   
   show heading.where(level: 1): it => [
-    #pagebreak(weak: true)
     #set text(20pt)
     #block(counter(heading).display() + " " + smallcaps(it.body)) 
   ]
