@@ -260,6 +260,12 @@
   // -- Main Body --
   // ---------------
 
+  // Set math numbering
+  set math.equation(numbering: "(1)")
+
+  // Set underlined links
+  show link: underline
+
   // Setup document before main body
   set page(header: getHeader())
   
